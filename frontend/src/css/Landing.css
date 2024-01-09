@@ -1,0 +1,81 @@
+.landingPage{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingInput {
+  display: flex;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 300px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(238, 172, 255, 0.5) 0%,
+    rgba(255, 193, 236, 0.5) 100%
+  );
+}
+
+.landingInput:focus {
+  outline: none;
+}
+
+.landingJoinBtn {
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    135deg,
+    rgb(235, 154, 255) 0%,
+    rgb(255, 165, 228) 100%
+  );
+  cursor: pointer;
+  transition: 100ms;
+}
+
+.landingJoinBtn:hover{
+  background: linear-gradient(
+    135deg,
+    rgb(211, 34, 255) 0%,
+    rgb(255, 24, 186) 100%
+  );
+  color: white;
+}
+
+.userInputBox h5{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 10px;
+}
+
+.userInputBox{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 40px;
+    border: 1px solid purple;
+    border-radius: 10px;
+}
+
+.LandingVideo{
+    border-radius: 10px;
+    height: 60%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .landingPage{
+        flex-direction: column;
+    }
+}
